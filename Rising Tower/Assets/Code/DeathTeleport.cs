@@ -8,15 +8,22 @@ public class DeathTeleport : MonoBehaviour
 
     public GameObject thePlayer;
 
+    
+
     void OnTriggerEnter(Collider other)
     {
-
-        thePlayer.transform.position = teleportTarget.transform.position;
-        /*if (other.tag == ("DeathTag"))
+       
+        //thePlayer.transform.position = teleportTarget.transform.position;
+        if (other.tag == ("DeathTag"))
         {
+            Debug.Log("Restart!");
             thePlayer.transform.position = teleportTarget.transform.position;
-        }*/
+        }
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        
+    }
 
 }

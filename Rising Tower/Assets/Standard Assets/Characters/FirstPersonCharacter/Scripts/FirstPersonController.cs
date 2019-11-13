@@ -41,6 +41,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private float m_NextStep;
         private bool m_Jumping;
         private AudioSource m_AudioSource;
+        private Vector3 startPos;
 
         // Use this for initialization
         private void Start()
@@ -55,8 +56,19 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
+            startPos = this.transform.position;
         }
 
+        void OnTriggerEnter(Collider other)
+        {
+
+            //thePlayer.transform.position = teleportTarget.transform.position;
+            if (other.tag == ("DeathTag"))
+            {
+                Debug.Log("Restart!");
+                this.transform.position = startPos;
+            }
+        }
 
         // Update is called once per frame
         private void Update()
