@@ -10,10 +10,12 @@ public class DeathTeleport : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == ("DeathTag"))
+
+        thePlayer.transform.position = teleportTarget.transform.position;
+        /*if (other.tag == ("DeathTag"))
         {
             thePlayer.transform.position = teleportTarget.transform.position;
-        }
+        }*/
     }
 
 
