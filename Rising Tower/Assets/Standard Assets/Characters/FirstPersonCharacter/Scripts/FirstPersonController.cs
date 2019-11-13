@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 namespace UnityStandardAssets.Characters.FirstPerson
@@ -41,7 +42,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private float m_NextStep;
         private bool m_Jumping;
         private AudioSource m_AudioSource;
-        private Vector3 startPos;
+        //private Vector3 startPos;
 
         // Use this for initialization
         private void Start()
@@ -56,7 +57,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
-            startPos = this.transform.position;
+            //startPos = this.transform.position;
         }
 
         void OnTriggerEnter(Collider other)
@@ -66,9 +67,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (other.tag == ("DeathTag"))
             {
                 Debug.Log("Restart!");
-                this.transform.position = startPos;
+                //this.transform.position = startPos;
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }
+
+
+
 
         // Update is called once per frame
         private void Update()
