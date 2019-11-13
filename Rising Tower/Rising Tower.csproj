@@ -623,6 +623,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Code\DeathTeleport.cs" />
+    <Compile Include="Assets\Code\Explode.cs" />
+    <Compile Include="Assets\Code\GloveMoveOne.cs" />
+    <Compile Include="Assets\Code\SpikeMove.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
