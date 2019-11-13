@@ -20,11 +20,16 @@ public class SpikeMove : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        //if (other.tag == ("1"))
         {
             Debug.Log("Move");
             transform.Translate(0f, 1.5f, 0f);
-            transform.gameObject.tag = "2";
+        }
+    }
+    void OnTriggerExit(Collider other)
+    {
+        {
+            Debug.Log("Move");
+            transform.Translate(0f, -1.5f, 0f);
         }
     }
 }

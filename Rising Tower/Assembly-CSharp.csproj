@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Code\DeathTeleport.cs" />
+    <Compile Include="Assets\Code\Explode.cs" />
     <Compile Include="Assets\Code\SpikeMove.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/zlapidus/Documents/GitHub/DeepPit/Rising Tower/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
