@@ -7806,6 +7806,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Jam - Spring
       objectReference: {fileID: 0}
+    - target: {fileID: -6183450184203652132, guid: 62ac1945188b29e4cae8957a5995d09f,
+        type: 3}
+      propertyPath: m_TagString
+      value: spring
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 62ac1945188b29e4cae8957a5995d09f,
         type: 3}
       propertyPath: m_LocalPosition.x

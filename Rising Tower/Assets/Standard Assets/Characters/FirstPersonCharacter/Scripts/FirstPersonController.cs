@@ -69,11 +69,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 Debug.Log("Restart!");
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
-            if (other.tag == ("Spring"))
+            if (other.tag == ("spring"))
             {
+                //Rigidbody body = other.collider.attachedRigidbody;
                 Debug.Log("Jump");
-                m_MoveDir.y = m_JumpSpeed * 20.0f;
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                m_MoveDir.y = m_JumpSpeed * 2.0f;
+                //body.AddForceAtPosition(m_CharacterController.velocity * 0.1f, hit.point, ForceMode.Impulse);
+
             }
         }
 
