@@ -63,7 +63,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Code\DeathTeleport.cs" />
+    <Compile Include="Assets\Code\dropaway.cs" />
     <Compile Include="Assets\Code\Explode.cs" />
+    <Compile Include="Assets\Code\FallingDeath.cs" />
     <Compile Include="Assets\Code\GloveMoveOne.cs" />
     <Compile Include="Assets\Code\SpikeMove.cs" />
     <Compile Include="Assets\Code\SpringExpand.cs" />

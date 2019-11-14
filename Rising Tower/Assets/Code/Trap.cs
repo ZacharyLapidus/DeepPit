@@ -6,6 +6,7 @@ public class Trap : MonoBehaviour
 {
     private Vector3 startPos;
     public float xAngle, yAngle, Zangle;
+    public float wait;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,7 @@ public class Trap : MonoBehaviour
 
     IEnumerator Dropper()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(wait);
         transform.position = new Vector3(-90f, 0f, 0f);
         
     }
@@ -34,7 +35,7 @@ public class Trap : MonoBehaviour
 
     IEnumerator Reset()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(3f);
         transform.position = startPos;
     }
 
