@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Explode : MonoBehaviour
 {
+    ParticleSystem butts;
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.SetActive(false);   
+        butts = GetComponent<ParticleSystem>(); 
     }
 
     // Update is called once per frame
@@ -19,7 +20,7 @@ public class Explode : MonoBehaviour
     {
         {
             Debug.Log("Explode");
-            gameObject.SetActive(true);
+            butts.Play();
         }
     }
 }
