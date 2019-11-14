@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Trap : MonoBehaviour
 {
-    public float xAngle, yAngle, Zanglel
+    private Vector3 startPos;
+    public float xAngle, yAngle, Zangle;
     // Start is called before the first frame update
     void Start()
     {
-        
+        startPos = this.transform.position;
     }
 
     // Update is called once per frame
@@ -17,26 +18,32 @@ public class Trap : MonoBehaviour
         
     }
 
-    /*IEnumerator Dropper()
+    IEnumerator Dropper()
     {
-        WaitForSeconds(1.5);
-        transform.position = new Vector3(0f, 0f, 0f);
+        yield return new WaitForSeconds(1.5f);
+        transform.position = new Vector3(-90f, 0f, 0f);
         
-    }*/
+    }
     void OnTriggerEnter(Collider other)
     {
         {
             Debug.Log("Drop");
-            //StartCoroutine(Dropper));
-            //transform.localScale += new Vector3(x, y, z);
+            StartCoroutine(Dropper());
         }
     }
 
-    /*void OnTriggerExit(Collider other)
+    IEnumerator Reset()
+    {
+        yield return new WaitForSeconds(1f);
+        transform.position = startPos;
+    }
+
+    void OnTriggerExit(Collider other)
     {
         {
-            Debug.Log("Move");
-            transform.localScale -= new Vector3(x, y, z);
+            StartCoroutine(Reset());
+            Debug.Log("Reseting");
+            
         }
-    }*/
+    }
 }
