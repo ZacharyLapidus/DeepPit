@@ -65,8 +65,8 @@ MonoBehaviour:
     y: 0
     width: 1905
     height: 1032
-  m_MinSize: {x: 200, y: 220}
-  m_MaxSize: {x: 4000, y: 4020}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -185,8 +185,8 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 711, y: 494}
-  m_MaxSize: {x: 18006, y: 14044}
+  m_MinSize: {x: 713, y: 494}
+  m_MaxSize: {x: 18008, y: 14044}
   vertical: 0
   controlID: 135
 --- !u!114 &9
@@ -435,23 +435,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 8a010000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 8efaffff84fbffff222f0000
+      m_ExpandedIDs: 8efbffff062f00005a2f0000742f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Spring_Coil
-        m_OriginalName: Spring_Coil
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 12066
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 9}
       m_SearchString: 
@@ -497,9 +497,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.0116405, y: -0.45000076, z: 49.398468}
+    m_Target: {x: 2.4581823, y: -2.9310474, z: 14.948513}
     speed: 2
-    m_Value: {x: 2.0116405, y: -0.45000076, z: 49.398468}
+    m_Value: {x: 2.4581823, y: -2.9310474, z: 14.948513}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -528,13 +528,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.3126517, y: -0.48921335, z: 0.19418177, w: -0.7910116}
+    m_Target: {x: -0.2583062, y: -0.10313825, z: 0.028360808, w: -0.96037626}
     speed: 2
-    m_Value: {x: -0.31257564, y: -0.48909435, z: 0.19413453, w: -0.79081917}
+    m_Value: {x: -0.2582434, y: -0.103113174, z: 0.028353913, w: -0.9601428}
   m_Size:
-    m_Target: 5.2213397
+    m_Target: 15.182634
     speed: 2
-    m_Value: 5.2213397
+    m_Value: 15.182634
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -687,20 +687,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts
+    - Assets/Code
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts
+  - Assets/Code
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\zlapidus\Documents\GitHub\DeepPit\Rising Tower
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b22a0000
-    m_LastClickedID: 10930
-    m_ExpandedIDs: 000000000e2a0000a62b0000c22b0000f22d0000dc30000000ca9a3b
+    m_SelectedIDs: d22a0000
+    m_LastClickedID: 10962
+    m_ExpandedIDs: 00000000ec290000842b0000a02b0000d02d0000cc30000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -728,7 +728,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000e2a0000a62b0000f22d0000dc300000
+    m_ExpandedIDs: 00000000ec290000842b0000d02d0000cc300000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -811,7 +811,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 12112
+  m_LastSelectedObjectID: 12068
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
