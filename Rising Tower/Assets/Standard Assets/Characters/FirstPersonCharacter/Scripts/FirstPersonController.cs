@@ -67,7 +67,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (other.tag == ("DeathTag"))
             {
                 Debug.Log("Restart!");
-                //this.transform.position = startPos;
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            if (other.tag == ("Spring"))
+            {
+                Debug.Log("Jump");
+                m_MoveDir.y = m_JumpSpeed * 20.0f;
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }

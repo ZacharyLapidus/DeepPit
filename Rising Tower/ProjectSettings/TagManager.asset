@@ -7,6 +7,7 @@ TagManager:
   - DeathTag
   - 1
   - 2
+  - spring
   layers:
   - Default
   - TransparentFX
