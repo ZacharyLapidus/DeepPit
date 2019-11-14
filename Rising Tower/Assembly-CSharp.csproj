@@ -67,6 +67,7 @@
     <Compile Include="Assets\Code\GloveMoveOne.cs" />
     <Compile Include="Assets\Code\SpikeMove.cs" />
     <Compile Include="Assets\Code\SpringExpand.cs" />
+    <Compile Include="Assets\Code\Trap.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/zlapidus/Documents/GitHub/DeepPit/Rising Tower/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

@@ -8,6 +8,7 @@ TagManager:
   - 1
   - 2
   - spring
+  - trap
   layers:
   - Default
   - TransparentFX
