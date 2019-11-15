@@ -15,6 +15,10 @@ public class SpringExpand : MonoBehaviour
     {
         startPos = this.transform.position;
         m_boioing = GetComponent<AudioSource>();
+        if(m_boioing == null)
+        {
+            Debug.Log("Can not find audio source in spring expand code");
+        }
     }
 
     // Update is called once per frame
@@ -24,21 +28,23 @@ public class SpringExpand : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
+        if (other.tag == ("Player"))
         {
             Debug.Log("Move");
             transform.localScale += new Vector3(x, y, z);
             PlayBoioing();
-            
         }
     }
     private void PlayBoioing()
     {
-        m_boioing.clip = boioing;
+        Debug.Log(boioing);
+        //m_boioing.clip = boioing;
         m_boioing.Play();
     }
 
     void OnTriggerExit(Collider other)
     {
+        if (other.tag == ("Player"))
         {
             Debug.Log("Move");
             transform.localScale -= new Vector3(x, y, z);

@@ -20,6 +20,7 @@ public class SpikeMove : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        if (other.tag == ("Player"))
         {
             Debug.Log("Move");
             transform.Translate(0f, 1.5f, 0f);
@@ -27,6 +28,7 @@ public class SpikeMove : MonoBehaviour
     }
     void OnTriggerExit(Collider other)
     {
+        if (other.tag == ("Player"))
         {
             Debug.Log("Move");
             transform.Translate(0f, -1.5f, 0f);

@@ -62,14 +62,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Code\BoulderMove.cs" />
     <Compile Include="Assets\Code\DeathTeleport.cs" />
     <Compile Include="Assets\Code\dropaway.cs" />
     <Compile Include="Assets\Code\Explode.cs" />
     <Compile Include="Assets\Code\FallingDeath.cs" />
     <Compile Include="Assets\Code\GloveMoveOne.cs" />
+    <Compile Include="Assets\Code\RealCharacterPopup.cs" />
     <Compile Include="Assets\Code\SpikeMove.cs" />
     <Compile Include="Assets\Code\SpringExpand.cs" />
     <Compile Include="Assets\Code\Trap.cs" />
+    <Compile Include="Assets\Code\YouWin.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/zlapidus/Documents/GitHub/DeepPit/Rising Tower/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

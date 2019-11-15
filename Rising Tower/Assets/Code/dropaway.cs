@@ -17,6 +17,7 @@ public class dropaway : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
+        if (other.tag == ("Player"))
         {
             Debug.Log("hotfire");
             transform.Translate(0f, -2.6f, 0f);
@@ -24,6 +25,7 @@ public class dropaway : MonoBehaviour
     }
     void OnTriggerExit(Collider other)
     {
+        if (other.tag == ("Player"))
         {
             Debug.Log("coldfire");
             transform.Translate(0f, 2.6f, 0f);

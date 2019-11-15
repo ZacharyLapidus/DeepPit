@@ -17,6 +17,7 @@ public class FallingDeath : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
+        if (other.tag == ("Player"))
         {
             Debug.Log("Deathup");
             transform.Translate(0f, 20.6f, 0f);

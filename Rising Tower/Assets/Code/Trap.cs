@@ -27,6 +27,7 @@ public class Trap : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
+        if (other.tag == ("Player"))
         {
             Debug.Log("Drop");
             StartCoroutine(Dropper());
@@ -41,6 +42,7 @@ public class Trap : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
+        if (other.tag == ("Player"))
         {
             StartCoroutine(Reset());
             Debug.Log("Reseting");

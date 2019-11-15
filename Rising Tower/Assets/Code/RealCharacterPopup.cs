@@ -26,6 +26,7 @@ public class RealCharacterPopup : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
+        if (other.tag == ("Player"))
         {
             Debug.Log("I found you faker!");
             transform.Translate(x, y, z);
@@ -33,6 +34,7 @@ public class RealCharacterPopup : MonoBehaviour
     }
     void OnTriggerExit(Collider other)
     {
+        if (other.tag == ("Player"))
         {
             Debug.Log("You're not even good enough to be my fake");
             transform.Translate(xdown, ydown, zdown);

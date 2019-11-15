@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/ThePit.unity
+    guid: 9058d33a936d7fb44b8f9bb1412521ec
+  - enabled: 1
+    path: Assets/Scenes/Winning.unity
+    guid: 0704d164ac5e7524a91aa8137c67fbb6
   m_configObjects: {}

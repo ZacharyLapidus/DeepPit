@@ -18,6 +18,7 @@ public class Explode : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
+        if (other.tag == ("Player"))
         {
             Debug.Log("Explode");
             butts.Play();

@@ -18,6 +18,7 @@ public class GloveMoveOne : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
+        if (other.tag == ("Player"))
         {
             Debug.Log("Move");
             transform.Translate(0f, 0f, -2.5f);
@@ -25,6 +26,7 @@ public class GloveMoveOne : MonoBehaviour
     }
     void OnTriggerExit(Collider other)
     {
+        if (other.tag == ("Player"))
         {
             Debug.Log("Move");
             transform.Translate(0f, 0f, 2.5f);
