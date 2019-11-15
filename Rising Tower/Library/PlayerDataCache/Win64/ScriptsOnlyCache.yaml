@@ -20,8 +20,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     - UnityEditor.Graphs.AnimatorControllerTool
-    UnityEditor.TestRunner.dll:
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -77,19 +75,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9868}
     - Class: 114
-      Script: {instanceID: 10208}
+      Script: {instanceID: 10138}
     - Class: 114
-      Script: {instanceID: 10320}
+      Script: {instanceID: 10210}
     - Class: 114
-      Script: {instanceID: 10438}
+      Script: {instanceID: 10322}
     - Class: 114
-      Script: {instanceID: 10590}
+      Script: {instanceID: 10440}
     - Class: 114
-      Script: {instanceID: 10642}
+      Script: {instanceID: 10592}
     - Class: 114
-      Script: {instanceID: 31350}
+      Script: {instanceID: 10638}
     - Class: 114
-      Script: {instanceID: 171288}
+      Script: {instanceID: 10646}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -866,6 +864,12 @@ ScriptsOnlyBuild:
     className: Water
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BoulderMove
+  - hash:
+      serializedVersion: 2
       Hash: 35a9693c388776aaf487636491a20f11
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1061,6 +1065,12 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
+    className: YouWin
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
     className: SpikeMove
   - hash:
       serializedVersion: 2
@@ -1086,20 +1096,8 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Utility
     className: AutoMobileShaderSwitch
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BoulderMove
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: YouWin
   platform: 19
   scenePathNames:
   - Assets/Scenes/ThePit.unity
   - Assets/Scenes/Winning.unity
-  playerPath: C:/Users/zlapidus/Documents/GitHub/DeepPit/Rising Tower/Rising Tower.exe
+  playerPath: J:/ThePit/Rising Tower.exe
